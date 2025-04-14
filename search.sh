@@ -10,7 +10,7 @@ target_number="$1"
 
 # Run the program on each directory
 for i in {1..6}; do
-    dir="dir$i"
+    dir="$HOME/split_files/dir$i"
     echo "🔍 Running search in $dir for target $target_number"
     ./script "$target_number" "$dir"
     echo "✅ Finished dir$i"
